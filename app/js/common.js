@@ -5,10 +5,10 @@ if (localStorage.name && localStorage.email && localStorage.phone)  {
   $('input[type="tel"]').val(localStorage.phone);
 }
 
-(function() {
+$(function() {
   $("[name=send]").click(function (e) {
    var btn = $(this);
-   var $form = $(this).closest('form');
+   var form = $(this).closest('form');
 
    $(":input.error").removeClass('error');
    $(".allert").remove();
@@ -61,45 +61,38 @@ if (localStorage.name && localStorage.email && localStorage.phone)  {
     $(send_btn).each(function() {
       $(this).attr('disabled', true);
     });
-
+    // Отправка на почту
     $.ajax({
       type: 'POST',
-      url: send_adress,
+      url: 'mail.php',
       data: msg,
       success: function() {
-        $('form').trigger("reset");
         setTimeout(function() {
           $("[name=send]").removeAttr("disabled");
         }, 1000);
-        // Настройки модального окна после удачной отправки
+        $('div.md-show').removeClass('md-show');
         dataLayer.push({
           'form_type': formType,
           'event': "form_submit"
         });
-        yaCounter41024484.reachGoal(goal);
+          // Отправка в базу данных
+          $.ajax({
+           type: 'POST',
+           url: 'db/registration.php',
+           dataType: 'json',
+           data: form.serialize(),
+           success: function(response) {
+             console.info(response);
+             console.log(form.serialize());
+             if (response.status == 'success') {
+              $('form').trigger("reset");
+              window.location.href = 'http://qagirl.pro/success';
+            }
+          }
+        });
       },
       error: function(xhr, str) {
-        dataLayer.push({
-          'form_type': formType,
-          'event': "form_submit"
-        });
-        yaCounter41024484.reachGoal(goal);
-        $('div.md-show').removeClass('md-show');
-        // Отправка в базу данных
-        $.ajax({
-         type: 'POST',
-         url: 'db/registration.php',
-         dataType: 'json',
-         data: $form.serialize(),
-         success: function(response) {
-           console.info(response);
-           console.log($form.serialize());
-           if (response.status == 'success') {
-            $('form').trigger("reset");
-            window.location.href = 'http://allinsol.com/bootcamp/success/';
-          }
-        }
-      });
+        console.log("Erorr")
       }
     });
 
@@ -107,10 +100,6 @@ if (localStorage.name && localStorage.email && localStorage.phone)  {
   return false;
 })
 });
-
-
-
-
 
  // Smooth scroll to anchor
 
@@ -124,10 +113,8 @@ if (localStorage.name && localStorage.email && localStorage.phone)  {
 //  INPUT TEL MASK
 
 jQuery(function($){
- $("input[type='tel']").mask("+9 (999) 999-9999");
+ $("input[type='tel']").mask("+99 (999) 999-9999");
 });
-
-
 
 // Scroll BAR
 
@@ -139,49 +126,17 @@ $(window).scroll(function() {
 
   });
 
+// Coaches more text show
 
-//YOUTUBE
-
-$(function() {
-  $(".youtube").each(function() {
-    $(this).css('background-image', 'url(http://i.ytimg.com/vi/' + this.id + '/sddefault.jpg)');
-
-    $(this).append($('<div/>', {'class': 'play'}));
-
-    $(document).delegate('#'+this.id, 'click', function() {
-      var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
-      if ($(this).data('params')) iframe_url+='&'+$(this).data('params');
-
-      var iframe = $('<iframe/>', {'frameborder': '0', 'src': iframe_url, 'width': $(this).width(), 'height': $(this).height() })
-
-      $(this).replaceWith(iframe);
-    });
-  });
-});
-
-// Waypoint
-
-// $('#sec_03').waypoint(
-//   function() {
-//     $( "#sec_03 .item" ).addClass( "animated" );
-//     $( "#sec_03 .item" ).addClass( "flipInX" );
-//   },
-//   {offset: "550px"}
-//   );
-
-// Parallax
-
-$(window).scroll(function() {
-
-  var st = $(this).scrollTop() /100;
-  var tt = $(this).scrollTop() /100;
-
-  $(".paralax_letter").css({
-    "transform" : "translate3d(0px, " + st  + "%, .0px)",
-    "-webkit-transform" : "translate3d(0px, " + st  + "%, .0px)",
-    "-ms-transform" : "translate3d(0px, " + st  + "%, .0px)"
-  });
-
+$('.coach_accordion_trigger').click(function() {
+  $(this).toggleClass('active');
+  $(this).closest('.coach_card').find('.coach_card_description').toggleClass('active');
+  if($(this).hasClass('active')){
+    $(this).children('span').text('уменьшить');
+  }
+  else {
+    $(this).children('span').text('читать полностью')
+  }
 });
 
 //  UP BUTTON
@@ -218,47 +173,18 @@ $('*').click(function() {
 });
 
 
-// Perfect Pxel
+// Slider
 
-$('body').each(function() {
-  var body = $(this);
-  var img_url = $(this).data('img');
-  var img = new Image();
-  img.src = img_url;
-  img.onload = function(){
-    var ppbox = '<div id="pp" style="background: url('+img_url+') no-repeat 50% 0%;top:0;width:100%;position:absolute;z-index:1000000;opacity:0.5;height:'+img.height+'px"></div>';
-    var ppbtn = '<button onclick="myOff()" id="ppbtn" style="position:fixed;top:0;right:0;z-index:1000001">ON</button>'
-    body.append(ppbox);
-    body.append(ppbtn);
-  };
+
+$(document).ready(function() {
+  $('.slider').slick({
+    slidesToShow: 1,
+    dots: false,
+    arrows: true,
+    fade: true,
+    slidesToScroll: 1,
+    autoplay: false,
+    adaptiveHeight: false
+  });
 });
-function myOff() {
-  var ppbtntext = $('#ppbtn').text();
-  if (ppbtntext == 'ON') {
-    $('#ppbtn').text('OFF');
-    $('#pp').css('display', 'none');
-  } else {
-    $('#ppbtn').text('ON');
-    $('#pp')        .css({
-      ' z-index' : '1000000',
-      display: 'block'
-    });
 
-  }
-}
-
-$('html').keydown(function(){
-  var ppbtntext = $('#ppbtn').text();
-  if (event.keyCode == 81) {
-    if (ppbtntext == 'ON') {
-      $('#ppbtn').text('OFF');
-      $('#pp').css('display', 'none');
-    } else {
-      $('#ppbtn').text('ON');
-      $('#pp')        .css({
-        ' z-index' : '1000000',
-        display: 'block'
-      });
-    }
-  }
-});

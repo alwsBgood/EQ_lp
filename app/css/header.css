@@ -1,8 +1,11 @@
 body {
   position: relative;
-  font: 18px/24px "Roboto", sans-serif;
-  color: #7b7b7b;
-  background-color: #fff; }
+  font: 16px/22px "RalewayLight", sans-serif;
+  color: #000;
+  background-color: #fff;
+  background-image: url(../img/body-lines.png);
+  background-position: top center;
+  background-repeat: repeat-y; }
 
 body.unscroll {
   overflow: hidden; }
@@ -44,11 +47,11 @@ button:hover, a:hover {
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 0px;
   border-radius: 0px;
-  background: #1988cc;
+  background: #2196f3;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #1988cc; }
+  background: #2196f3; }
 
 /* BUTTON scrollUP SYLES*/
 #scrollup {
@@ -63,7 +66,7 @@ button:hover, a:hover {
   opacity: 1;
   cursor: pointer;
   z-index: 10;
-  font-size: 40px;
+  font-size: 3rem;
   text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.5s;
   transition: all 0.5s; }
@@ -73,7 +76,7 @@ button:hover, a:hover {
     transition: all 0.5s; }
 
 #scrollup:hover svg {
-  fill: #1988cc; }
+  fill: #2196f3; }
 
 .hidden {
   height: 0;
@@ -86,18 +89,177 @@ button:hover, a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  background: #1988cc; }
+  background: #2196f3; }
 
 .btn {
-  width: 300px;
-  height: 60px;
-  background-color: #1988cc;
-  color: #000;
-  font: 20px "Roboto", sans-serif;
-  text-transform: uppercase; }
+  height: 3.75rem;
+  -webkit-border-radius: 1.875rem;
+  border-radius: 1.875rem;
+  border: 0.313rem solid #fff;
+  background-color: #2196f3;
+  opacity: 0.9;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  font: 1.5rem "BebasNeueBold", sans-serif;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s; }
+  .btn span {
+    display: inline-block;
+    margin-right: 40px; }
 
 .btn:hover {
-  background-color: #ffec3d; }
+  opacity: 1; }
+  .btn:hover img {
+    -webkit-transform: translateX(60px);
+    -ms-transform: translateX(60px);
+    transform: translateX(60px); }
 
-.btn:active {
-  background-color: #edcc00; }
+.main_title {
+  font-family: "BebasNeueBold", sans-serif; }
+
+.title_text {
+  font-family: "Raleway-Bold", sans-serif; }
+
+.text--upper {
+  text-transform: uppercase; }
+
+.text--blue {
+  color: #2196f3; }
+
+.rotate--minus {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.rotate--plus {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.col--nopadding {
+  margin-left: -30px; }
+
+.margined--left {
+  margin-left: 100px; }
+
+.section_title {
+  font-size: 2.75rem;
+  line-height: 3.375rem;
+  margin-bottom: 45px; }
+
+.vertical_text {
+  position: absolute;
+  color: #2196f3;
+  font-size: 3rem;
+  opacity: 0.5; }
+
+.main_menu {
+  background: #fff;
+  padding: 45px 45px 60px 65px; }
+  .main_menu .callback_button {
+    margin-top: 115px; }
+
+.main_menu_navigation .menu_navigation_item + .menu_navigation_item {
+  margin-top: 30px; }
+
+.menu_navigation_link {
+  display: block;
+  position: relative;
+  color: #212121;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+  -webkit-transition: color .3s, -webkit-transform 0.3s;
+  transition: color .3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, color .3s;
+  transition: transform 0.3s, color .3s, -webkit-transform 0.3s; }
+
+.menu_navigation_item {
+  position: relative; }
+
+.menu_navigation_item:before {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 0px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #2196f3;
+  -webkit-transition: height .3s;
+  transition: height .3s; }
+
+.menu_navigation_item:hover .menu_navigation_link {
+  color: #2196f3;
+  -webkit-transform: translate(35px);
+  -ms-transform: translate(35px);
+  transform: translate(35px); }
+
+.menu_navigation_item:hover:before {
+  height: 100%; }
+
+.main_menu_logo {
+  margin-bottom: 40px; }
+
+.callback_button {
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 2.375rem;
+  max-width: 195px;
+  border-bottom: 2px solid #000;
+  display: block;
+  letter-spacing: 0.03em; }
+
+.callback_button:before {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 2px;
+  left: 0px;
+  bottom: -2px;
+  background-color: #2196f3;
+  -webkit-transition: width .3s;
+  transition: width .3s; }
+
+.callback_button:hover:before {
+  width: 100%; }
+
+#sec_01 {
+  padding-bottom: 560px;
+  background-image: url(../img/sec_01-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat; }
+
+.sec_01_wrapper {
+  position: relative;
+  padding-top: 175px;
+  padding-left: 165px; }
+  .sec_01_wrapper .vertical_text {
+    color: #90caf9;
+    opacity: 1;
+    top: 185px;
+    left: -65px; }
+  .sec_01_wrapper h1 {
+    font-size: 11.4rem;
+    line-height: 8rem;
+    padding-top: 45px;
+    color: transparent;
+    padding-right: 40px;
+    margin-right: -40px;
+    background-image: url(../img/h1-bg.png);
+    background-position: top left;
+    background-repeat: no-repeat; }
+  .sec_01_wrapper .afterheader {
+    text-align: right;
+    font-size: 2.625rem;
+    letter-spacing: .02em;
+    margin-top: 25px; }
+  .sec_01_wrapper .sec_01_describe {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+    letter-spacing: .025em;
+    margin: 60px 0 75px; }
+  .sec_01_wrapper .btn {
+    max-width: 390px; }

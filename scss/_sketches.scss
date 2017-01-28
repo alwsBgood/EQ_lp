@@ -33,31 +33,34 @@ cursor: -webkit-grabbing !important;
 div[id*="modal_callback"]{
   max-width: 500px;
   h2{
-    font-size: 29px;
-    line-height: 36px;
+    font-size: 2rem;
+    line-height: 2.5rem;
     margin: 30px 30px 0px;
   }
   .h2_desc{margin-bottom: 25px;}
   .md-content{
     padding: 20px;
-    background: #fff;
+    background: transparent;
     background-size: cover;
     text-align: center;
   }
-  .form-wrap {
-    display: block;
+  form{
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
   }
   .field{
-    width: 360px;
+    width: 100%;
     input{
       width: 100%;
     }
   }
   .field+.field {
-   margin-top: 5px
+   margin-top: 20px;
   }
   .btn{
-    margin: 10px auto 0;
+    margin: 40px auto 0;
+    display: block;
   }
 }
 
@@ -71,7 +74,11 @@ div[id*="modal_politics"]{
   h2{padding-top: 50px;}
 }
 
-// .md-overlay{background: #fff;}
+.md-overlay{
+  background-image: url(../img/popup-bg.png);
+  background-position: top center;
+  background-repeat: no-repeat;;
+}
 
 .md_large {
     max-width: 100%;
@@ -91,7 +98,7 @@ div[id*="modal_politics"]{
     padding-bottom: 24px;
     }
 .md_large .md_content {
-    max-height: 320px;
+    max-height: 620px;
     overflow: auto;
     padding-top: 24px;
     }
@@ -190,9 +197,10 @@ div[id*="modal_politics"]{
 
 .btn_close_modal{
   position: absolute;
-  right: 30px;
+  right: -30px;
+  opacity: 0.8;
   z-index: 10;
-  top: 30px;
+  top: 0px;
   svg{width: 40px;}
   display: block;
   width: 40px;
@@ -207,6 +215,7 @@ div[id*="modal_politics"]{
   transition: transform 1s, -webkit-transform 1s;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+  transition: all .3s;
   a{
     color: #000;
     transition: all .3s;
@@ -223,6 +232,10 @@ div[id*="modal_politics"]{
       .a {fill: $main_color; }
     }
   }
+}
+
+.btn_close_modal:hover{
+  opacity: 1;
 }
 
 .t_small{
@@ -263,62 +276,35 @@ div[id*="modal_politics"]{
 }
 
 
-// .slick-next{
-//       z-index: 10;
-//       right: 0;
-//       background: url(../img/slider-next.png) top center no-repeat;
-//     }
-// .slick-prev{
-//       background: url(../img/slider-prev.png) top center no-repeat;
-//       z-index: 10;
-//       right: 180px;
-//   }
-
-// .slick-next, .slick-prev{
-//     position: absolute;
-//     display: block;
-//     cursor: pointer !important;
-//     width: 75px;
-//     height: 13px;
-//     border: none;
-//     outline: none;
-//     top: -40px;
-//   }
-
-.slick-next, .slick-prev{
-  bottom: initial;
-  top: 200px;
-  background: none;
-  width: 20px;
-  height: 20px;
-}
 .slick-next{
-  border-top: 4px solid #000;
-  border-right: 4px solid #000;
+  z-index: 10;
+  right: 240px;
+  background: url(../img/slider-next.png) center no-repeat;
   transform: rotate(45deg);
-  right: 10px;
-  margin: 0;
 }
 .slick-prev{
-  border-top: 4px solid #000;
-  border-left: 4px solid #000;
-  transform: rotate(-45deg);
-  left: 10px;
-  margin: 0;
+  background: url(../img/slider-next.png) center no-repeat;
+  z-index: 10;
+  right: 330px;
+  transform: rotate(-135deg);
 }
-.slick-next:hover{
-  border-top: 4px solid $main_color;
-  border-right: 4px solid $main_color;
-  // background: none !important;
+
+.slick-next, .slick-prev{
+  position: absolute;
+  display: block;
+  cursor: pointer !important;
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  top: 68px;
+  transition: all .3s;
 }
-.slick-prev:hover{
-  border-top: 4px solid $main_color;
-  border-left: 4px solid $main_color;
-  // background: none !important;
+
+.slick-next:hover, .slick-prev:hover{
+  background-color: #a6c4ed;
 }
-.slick-next:before, .slick-prev:before{
-  display: none;
-}
+
 
 .slick-slide{outline: none;}
 
@@ -327,7 +313,8 @@ div[id*="modal_politics"]{
   position: relative;
   display: block;
   input{
-    padding: 25px 0;
+    padding: 15px 0;
+    background: none;
     width: 100%;
     color: #000;
     font: 18px/20px $main_font;
@@ -372,20 +359,20 @@ textarea:active+.bar, textarea:focus+.bar{
 
 input::-webkit-input-placeholder{
   color: #9F9F9F;
-  font: 18px/24px $main_font;
+  font: 1rem/1.3rem $main_font;
 }
 
 input:-moz-placeholder{
   color: #9F9F9F;
-  font: 18px/24px $main_font;
+  font: 1rem/1.3rem $main_font;
 }
 
 input::-moz-placeholder{
   color: #9F9F9F;
-  font: 18px/24px $main_font;
+  font: 1rem/1.3rem $main_font;
 }
 
 input:-ms-input-placeholder{
   color: #9F9F9F;
-  font: 18px/24px $main_font;
+  font: 1rem/1.3rem $main_font;
 }
