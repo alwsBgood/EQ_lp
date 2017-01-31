@@ -71,7 +71,12 @@ div[id*="modal_callback"]{
 
 div[id*="modal_politics"]{
   text-align: center;
-  h2{padding-top: 50px;}
+  h2{
+  padding-top: 70px;
+  font-size: 2rem;
+  color: $main_color;
+  font-family: $main_bold_font;
+  }
 }
 
 .md-overlay{

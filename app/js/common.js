@@ -86,7 +86,7 @@ $(function() {
              console.log(form.serialize());
              if (response.status == 'success') {
               $('form').trigger("reset");
-              window.location.href = 'http://qagirl.pro/success';
+               window.location.href = 'http://allinsol.com/eqbootcamp/success/';
             }
           }
         });
@@ -130,13 +130,18 @@ $(window).scroll(function() {
 
 $('.coach_accordion_trigger').click(function() {
   $(this).toggleClass('active');
-  $(this).closest('.coach_card').find('.coach_card_description').toggleClass('active');
+  $(this).closest('.coach_card').find('.more_info').slideToggle();
   if($(this).hasClass('active')){
     $(this).children('span').text('уменьшить');
   }
   else {
     $(this).children('span').text('читать полностью')
   }
+});
+
+
+$('.coach_img').click(function() {
+  $(this).closest('.coach_card').find('.coach_accordion_trigger').click();
 });
 
 //  UP BUTTON
@@ -188,3 +193,16 @@ $(document).ready(function() {
   });
 });
 
+// Menu
+
+$('.menu_site_navigation').click(function(event) {
+  $(this).toggleClass('open');
+});
+
+$(window).scroll(function(){
+  if ( $(document).scrollTop() > 600 ) {
+    $('.menu_site_navigation').fadeIn('slow');
+  } else {
+    $('.menu_site_navigation').fadeOut('slow');
+  }
+});

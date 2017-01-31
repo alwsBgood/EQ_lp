@@ -60,6 +60,8 @@
 
 .sec_03_item+.sec_03_item{margin-left: 10px;}
 
+.mobile{display: none}
+
 
 // Section 04
 
@@ -197,6 +199,8 @@
   cursor: pointer;
   transition: filter 0.3s;
   margin-bottom: 40px;
+  width: 100%;
+  max-width: 303px;
 }
 
 .coach_img:hover{
@@ -211,10 +215,13 @@
 
 .coach_card_description{
   position: relative;
-  height: 105px;
+  // height: 105px;
+  // display: none;
   overflow: hidden;
   transition: height .6s;
 }
+
+.more_info{display: none}
 
 .coach_card_description:before{
   position: absolute;
@@ -226,9 +233,9 @@
   background: url(../img/dots.png) center no-repeat;
 }
 
-.coach_card_description.active{
-  height: 200px;
-}
+// .coach_card_description.active{
+//   height: 400px;
+// }
 
 .coach_card_description.active:before{
   display: none;
@@ -321,6 +328,7 @@
   position: relative;
   img{
     position:absolute;
+    cursor: pointer;
   }
   img:nth-child(1){
     top: 0;
@@ -389,7 +397,7 @@
 // Section 16
 
 #sec_16{
-  padding: 150px 0 115px;
+  padding: 100px 0 115px;
   background-image: url(../img/sec_15-bg.png);
   background-position: bottom center;
   background-repeat: no-repeat;;
@@ -449,6 +457,25 @@ footer{
     }
   }
 }
+
+div[id*="modal_picture"]{
+  .md-content{
+    background: none;
+    text-align: center
+  }
+  // .btn_close_modal{
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   text-shadow: 1px 1px 10px #fff;
+  // }
+  [alt="Hotel"]{
+    // width: 100%;
+    max-width: 100%;
+    max-height: 90vh;
+  }
+}
+
 
 //ALWAYS END
 @import "_sketches.scss";

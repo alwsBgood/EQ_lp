@@ -5,7 +5,16 @@
 
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
-
+<script>
+ dataLayer = [];
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MHTZRB');</script>
+<!-- End Google Tag Manager -->
 <head>
 
     <meta charset="utf-8">
@@ -17,7 +26,8 @@
 
     <meta property="og:description" content="BootCamp в Карпатах — это пятидневная программа эмоциональной и физической перезагрузки. Соберитесь с силами — вас ждет откровенный разговор с самим собой." />
 
-    <meta property="og:image" content="img/of.png" />
+     <meta property="og:image" content="http://allinsol.com/eqbootcamp/img/og.png" />
+    <meta property="og:image:url" content="http://allinsol.com/eqbootcamp/img/og.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="300" />
@@ -29,12 +39,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="img/favicon/manifest.json">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#2196f3">
 
 
 
@@ -66,6 +79,10 @@
 
 </head>
 <body data-img="img/land.jpg">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHTZRB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <div class="site_wrapper">
 
     <div class="bar-long"></div>
@@ -79,12 +96,28 @@
                         <img src="img/logo.png" alt="" class="main_menu_logo logo">
                         <ul class="main_menu_navigation">
                             <li class="menu_navigation_item"><a href="#sec_04" class="scroll menu_navigation_link">Что такое BootCamp</a></li>
-                            <li class="menu_navigation_item"><a href="#sec_01" class="scroll menu_navigation_link">Программа</a></li>
-                            <li class="menu_navigation_item"><a href="#sec_01" class="scroll menu_navigation_link">Локации</a></li>
-                            <li class="menu_navigation_item"><a href="#sec_01" class="scroll menu_navigation_link">Тренеры</a></li>
-                            <li class="menu_navigation_item"><a href="#sec_01" class="scroll menu_navigation_link">Как попасть</a></li>
+                            <li class="menu_navigation_item"><a href="#sec_09" class="scroll menu_navigation_link">Программа</a></li>
+                            <li class="menu_navigation_item"><a href="#sec_10" class="scroll menu_navigation_link">Тренеры</a></li>
+                            <li class="menu_navigation_item"><a href="#sec_11" class="scroll menu_navigation_link">Как попасть</a></li>
+                            <li class="menu_navigation_item"><a href="#sec_12" class="scroll menu_navigation_link">Локации</a></li>
+                        </ul>
+                        <div class="phones_wrapper">
+                            <a class="md-trigger main_title callback_button text--upper" data-modal="modal_callback">ЗАКАЗАть звонок</a>
+                            <a href="tel:+380933432126" class="tel main_title">+38 (093) 343-21-26</a>
+                        </div>
+                    </div>
+
+                    <div class="main_menu menu_site_navigation">
+                        <img src="img/logo.png" alt="" class="main_menu_logo logo">
+                        <ul class="main_menu_navigation">
+                            <li class="menu_navigation_item"><a href="#sec_04" class="scroll menu_navigation_link">Что такое BootCamp</a></li>
+                            <li class="menu_navigation_item"><a href="#sec_09" class="scroll menu_navigation_link">Программа</a></li>
+                            <li class="menu_navigation_item"><a href="#sec_10" class="scroll menu_navigation_link">Тренеры</a></li>
+                            <li class="menu_navigation_item"><a href="#sec_11" class="scroll menu_navigation_link">Как попасть</a></li>
+                            <li class="menu_navigation_item"><a href="#sec_12" class="scroll menu_navigation_link">Локации</a></li>
                         </ul>
                         <a class="md-trigger main_title callback_button text--upper" data-modal="modal_callback">ЗАКАЗАть звонок</a>
+                        <a href="tel:+380933432126" class="tel main_title">+38 (093) 343-21-26</a>
                     </div>
                 </div>
                 <div class="col-8">
@@ -134,7 +167,7 @@
                 <div class="col-6">
                     <h2 class="section_title main_title"><span class="text--blue">Соберитесь с силами:</span> <br> вас ждет откровенный разговор <br> с самим собой</h2>
                     <div class="sec_03_items">
-                        <div class="items_row">
+                        <div class="items_row desctop">
                             <div class="sec_03_item item">
                                 <p class="item_number text--blue">1</p>
                                 <p class="title_text">20 участников:</p>
@@ -151,11 +184,11 @@
                                 <p class="text"> вредных привычек <br> и денег;</p>
                             </div>
                         </div>
-                        <div class="items_row">
+                        <div class="items_row desctop">
                             <div class="sec_03_item item">
                                 <p class="item_number text--blue">4</p>
                                 <p class="title_text">занятия йогой</p>
-                                <p class="text"> с Дмитрием <br> и Ольгой Яценко</p>
+                                <p class="text"> с Дмитрием <br> и Ольгой Яценко;</p>
                             </div>
                             <div class="sec_03_item item">
                                 <p class="item_number text--blue">5</p>
@@ -165,15 +198,55 @@
                             <div class="sec_03_item item">
                                 <p class="item_number text--blue">6</p>
                                 <p class="title_text">путешествия,</p>
-                                <p class="text"> дыхательные практики,  <br> рт-терапия.</p>
+                                <p class="text"> дыхательные практики,  <br> рт-терапия;</p>
                             </div>
                         </div>
-                        <div class="sec_03_item item">
+                        <div class="sec_03_item item desctop">
                             <p class="item_number text--blue">7</p>
                             <p class="title_text">работа <br> с профессиональным <br> ментором</p>
-                            <p class="text"> Юноной <br> Лотоцкой;</p>
+                            <p class="text"> Юноной <br> Лотоцкой.</p>
                         </div>
-                        <img src="img/sec_03-img-2.png" alt="Горы" class="sec_img-1">
+                        <div class="mobile">
+                                <div class="sec_03_item item">
+                                    <p class="item_number text--blue">1</p>
+                                    <p class="title_text">20 участников:</p>
+                                    <p class="text"> собственники бизнеса <br> и лидеры мнений;</p>
+                                </div>
+                                <div class="sec_03_item item">
+                                    <p class="item_number text--blue">2</p>
+                                    <p class="title_text">5 дней в Карпатах</p>
+                                    <p class="text"> в эко-гостинице;</p>
+                                </div>
+                                <div class="sec_03_item item">
+                                    <p class="item_number text--blue">3</p>
+                                    <p class="title_text">отказ от гаджетов, </p>
+                                    <p class="text"> вредных привычек <br> и денег;</p>
+                                </div>
+
+
+                                <div class="sec_03_item item">
+                                    <p class="item_number text--blue">4</p>
+                                    <p class="title_text">занятия йогой</p>
+                                    <p class="text"> с Дмитрием <br> и Ольгой Яценко;</p>
+                                </div>
+                                <div class="sec_03_item item">
+                                    <p class="item_number text--blue">5</p>
+                                    <p class="title_text">рефлексивные</p>
+                                    <p class="text"> упражнения, <br> ролевые игры;</p>
+                                </div>
+                                <div class="sec_03_item item">
+                                    <p class="item_number text--blue">6</p>
+                                    <p class="title_text">путешествия,</p>
+                                    <p class="text"> дыхательные практики,  <br> рт-терапия;</p>
+                                </div>
+
+                            <div class="sec_03_item item">
+                                <p class="item_number text--blue">7</p>
+                                <p class="title_text">работа <br> с профессиональным <br> ментором</p>
+                                <p class="text"> Юноной <br> Лотоцкой.</p>
+                            </div>
+                        </div>
+                        <img src="img/sec_03-img-2.png" alt="Горы" class="sec_img-1 desctop">
                     </div>
                 </div>
                 <div class="col-6 only_img_col">
@@ -242,7 +315,7 @@
                         <div class="item_number_block number_block--arrow">
                             <p class="item_number">02</p>
                         </div>
-                        <p class="item_text"><span class="title_text">Избавитесь от шума,</span> сконцентрируетесь на важном, погрузитесь глубоко в себя</p>
+                        <p class="item_text"><span class="title_text">Избавитесь от шума,</span> сконцентрируетесь на важном, погрузитесь глубоко в себя.</p>
                     </div>
                 </div>
                 <div class="col-4">
@@ -266,7 +339,7 @@
                         <div class="item_number_block number_block--arrow">
                             <p class="item_number">05</p>
                         </div>
-                        <p class="item_text"><span class="title_text">Создадите программу</span> <br /> личностных изменений <br /> "easy change"</p>
+                        <p class="item_text"><span class="title_text">Создадите программу</span> <br /> личностных изменений <br /> "easy change".</p>
                     </div>
                 </div>
                 <div class="col-4">
@@ -321,7 +394,7 @@
                 <h2 class="section_title main_title text--blue">ПРОГРАММА BOOT CAMP</h2>
                     <div class="program_period">
                         <p class="vertical_text rotate--plus main_title">День 1-2</p>
-                        <div class="program_lists">
+                        <div class="program_lists four--colums">
                             <p class="program_title text--upper title_text">Что я <span class="text--blue">ЗНАЮ</span> о себе</p>
                             <div class="program_lists_item">
                                 <p class="lists_item_title title_text">Цели:</p>
@@ -334,22 +407,22 @@
                             <div class="program_lists_item">
                                 <p class="lists_item_title title_text">Ценности:</p>
                                 <ul class="program_list">
-                                    <li class="list_item">• Идентификация ложных и истинных ценностей.</li>
+                                    <li class="list_item">• Идентификация ложных и истинных ценностей;</li>
                                     <li class="list_item">• Создание мотивационно-ценностной карты.</li>
                                 </ul>
                             </div>
                             <div class="program_lists_item">
                                 <p class="lists_item_title title_text">Сценарная карта:</p>
                                 <ul class="program_list">
-                                   <li class="list_item">• Знакомство с глубинными комплексами и страхами.</li>
+                                   <li class="list_item">• Знакомство с глубинными комплексами и страхами;</li>
                                    <li class="list_item">• Осознание запретов и разрешений.</li>
                                 </ul>
                             </div>
                             <div class="program_lists_item">
                                 <p class="lists_item_title title_text">Понимание успеха</p>
                                 <ul class="program_list">
-                                    <li class="list_item">• Понимание успеха в каждой из десяти сфер.</li>
-                                    <li class="list_item">• Куда я инвестирую свою энергию.</li>
+                                    <li class="list_item">• Понимание успеха в каждой из десяти сфер;</li>
+                                    <li class="list_item">• Куда я инвестирую свою энергию;</li>
                                     <li class="list_item">• Хватает ли мне сил заниматься тем, чем действительно хочется. Масштаб моего успеха.</li>
                                 </ul>
                             </div>
@@ -366,25 +439,25 @@
                             <div class="program_lists_item">
                                 <p class="lists_item_title title_text">Цели:</p>
                                 <ul class="program_list">
-                                    <li class="list_item">• Определить личную миссию</li>
+                                    <li class="list_item">• Определить личную миссию;</li>
                                     <li class="list_item">• Освоить навыки:</li>
-                                    <li class="list_item">- понимания своих эмоций и эмоций других людей</li>
-                                    <li class="list_item">- построения продуктивных отношений</li>
-                                    <li class="list_item">- создания ресурсных состояний в трудных ситуациях</li>
+                                    <li class="list_item">- понимания своих эмоций и эмоций других людей;</li>
+                                    <li class="list_item">- построения продуктивных отношений;</li>
+                                    <li class="list_item">- создания ресурсных состояний в трудных ситуациях.</li>
                                 </ul>
                             </div>
                             <div class="program_lists_item">
                                 <p class="lists_item_title title_text">Эмоциональный <br> интеллект:</p>
                                 <ul class="program_list">
-                                   <li class="list_item">• Умение распознавать и интерпретировать свои эмоции и эмоции окружающих людей.</li>
-                                   <li class="list_item">• Освоение навыков релаксации и повышения ресурсного состояния.</li>
+                                   <li class="list_item">• Умение распознавать и интерпретировать свои эмоции и эмоции окружающих людей;</li>
+                                   <li class="list_item">• Освоение навыков релаксации и повышения ресурсного состояния;</li>
                                    <li class="list_item">• Как я влияю своими эмоциями на окружающий мир.</li>
                                 </ul>
                             </div>
                             <div class="program_lists_item">
                                 <p class="lists_item_title title_text">Моя миссия:</p>
                                 <ul class="program_list">
-                                    <li class="list_item">• Проработка собственной миссии исходя из своих истинных ценностей и желаний.</li>
+                                    <li class="list_item">• Проработка собственной миссии исходя из своих истинных ценностей и желаний;</li>
                                     <li class="list_item">• Как я улучшаю мир в контексте своей миссии?</li>
                                 </ul>
                             </div>
@@ -401,17 +474,17 @@
                             <div class="program_lists_item">
                                 <p class="lists_item_title title_text">Цели:</p>
                                 <ul class="program_list">
-                                <li class="list_item">• Создание личного видения желаемого будущего</li>
-                                <li class="list_item">• Освоение навыка self-coaching</li>
-                                <li class="list_item">• Создание плана “Моя программа изменений”</li>
+                                <li class="list_item">• Создание личного видения желаемого будущего;</li>
+                                <li class="list_item">• Освоение навыка self-coaching;</li>
+                                <li class="list_item">• Создание плана “Моя программа изменений”.</li>
                                 </ul>
                             </div>
                             <div class="program_lists_item">
                                 <p class="lists_item_title title_text">Моя визия:</p>
                                 <ul class="program_list">
-                                <li class="list_item">• Создание желаемого образа себя в будущем.</li>
-                                <li class="list_item">• Self-coaching. Как задавать себе правильные вопросы.</li>
-                                <li class="list_item">• Инструменты для выхода <br> из стрессовых ситуаций.</li>
+                                <li class="list_item">• Создание желаемого образа себя в будущем;</li>
+                                <li class="list_item">• Self-coaching. Как задавать себе правильные вопросы;</li>
+                                <li class="list_item">• Инструменты для выхода <br> из стрессовых ситуаций;</li>
                                 <li class="list_item">• Умение рассмотреть любую ситуацию со стороны.</li>
 
                                 </ul>
@@ -436,15 +509,16 @@
                 <div class="col-12">
                     <h2 class="section_title main_title text--blue tc">ТРЕНЕРЫ BOOTCAMP</h2>
                 </div>
+            </div>
                 <div class="row">
                     <div class="col-4">
                         <div class="coach_card">
                             <div class="coach_card_img_wrapper">
-                                <img src="img/coach-1.png" alt="Тренер" class="coach_img coach_accordion_trigger">
+                                <img src="img/coach-1.png" alt="Тренер" class="coach_img">
                             </div>
                             <p class="coach_card_name title_text text--upper">Юнона Лотоцкая</p>
                             <div class="coach_card_description">
-                                <p class="coach_card_text">Бизнес-консультант, более 20 лет опыта работы в корпоративном сегменте. Работала с топ-менеджерами Киевстар, Metlife, Mondelez International, УкрАгроКом. Докторант, учёный-экспериментатор, ведущий научный сотрудник лаборатории Новых информационных технологий обучения Института психологии им. Г.С.Костюка НАПН Украины. Автор трансформационного курса “Психология успеха”, член украинского сообщества психотерапевтов Европейской организации психотерапии. Автор-разработчик 23 обучающих программ. Основатель и руководитель центра инновационного менеджмента «Почерк». Тренер проекта “СОЛЬ”. </p>
+                                <p class="coach_card_text">Бизнес-консультант, более 20 лет опыта работы в корпоративном сегменте. Работала с топ-менеджерами Киевстар, Metlife, Mondelez International, УкрАгроКом. Докторант, учёный-экспериментатор, ведущий <p class="more_info">научный сотрудник лаборатории Новых информационных технологий обучения Института психологии им. Г.С.Костюка НАПН Украины. Автор трансформационного курса “Психология успеха”, член украинского сообщества психотерапевтов Европейской организации психотерапии. Автор-разработчик 23 обучающих программ. Основатель и руководитель центра инновационного менеджмента «Почерк». Тренер проекта “СОЛЬ”.</p> </p>
                             </div>
                             <button class="coach_accordion_trigger coach_card_button"><span class="main_title text--blue">читать польностью</span><img src="img/ar-3.png" alt="Указатель" class="coach_btn_arrow"></button>
                         </div>
@@ -452,11 +526,11 @@
                     <div class="col-4">
                         <div class="coach_card">
                             <div class="coach_card_img_wrapper">
-                                <img src="img/coach-2.png" alt="Тренер" class="coach_img coach_accordion_trigger">
+                                <img src="img/coach-2.png" alt="Тренер" class="coach_img">
                             </div>
                             <p class="coach_card_name title_text text--upper">Дима Яценко</p>
                             <div class="coach_card_description">
-                                <p class="coach_card_text">Гимнастику йоги практикует с 2000 года. Занимался восточными единоборствами, в том числе айкидо, цигун, тай-цзи. Участник многочисленных ретритов по дзен, дзогчен и йоге. Преподает в нескольких киевских студиях йоги, проводит ретриты и семинары. Прошел курс обучения в школе инструкторов Андрея Сидерского, сертифицированный преподаватель Европейского йога-альянса. Автор методики Yoga Balance Technology.</p>
+                                <p class="coach_card_text">Гимнастику йоги практикует с 2000 года. Занимался восточными единоборствами, в том числе айкидо, цигун, тай-цзи. Участник многочисленных ретритов по дзен, дзогчен и йоге. Преподает в нескольких киевских студиях <p class="more_info"> йоги, проводит ретриты и семинары. Прошел курс обучения в школе инструкторов Андрея Сидерского, сертифицированный преподаватель Европейского йога-альянса. Автор методики Yoga Balance Technology.</p></p>
                             </div>
                             <button class="coach_accordion_trigger coach_card_button"><span class="main_title text--blue">читать польностью</span><img src="img/ar-3.png" alt="Указатель" class="coach_btn_arrow"></button>
                         </div>
@@ -464,17 +538,16 @@
                     <div class="col-4">
                         <div class="coach_card">
                             <div class="coach_card_img_wrapper">
-                                <img src="img/coach-3.png" alt="Тренер" class="coach_img coach_accordion_trigger">
+                                <img src="img/coach-3.png" alt="Тренер" class="coach_img">
                             </div>
                             <p class="coach_card_name title_text text--upper">Ольга Яценко</p>
                             <div class="coach_card_description">
-                                <p class="coach_card_text"> Журналист, переводчик, писатель, сценарист, лауреат Новой Пушкинской премии. Йогой занимается с 2010 года. Автор блога "Йога для жизни и жизнь с йогой". Многодетная (четырехкратная!) мама и адепт здорового образа жизни в условиях повседневного быта. </p>
+                                <p class="coach_card_text"> Журналист, переводчик, писатель, сценарист, лауреат Новой Пушкинской премии. Йогой занимается с 2010 года. Автор блога "Йога для жизни и жизнь с йогой". Многодетная (четырехкратная!) мама и адепт здорового <p class="more_info">образа жизни в условиях повседневного быта. </p></p>
                             </div>
                             <button class="coach_accordion_trigger coach_card_button"><span class="main_title text--blue">читать польностью</span><img src="img/ar-3.png" alt="Указатель" class="coach_btn_arrow"></button>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -553,21 +626,50 @@
                     </div>
                 </div>
                 <div class="col-8 col--nopadding">
-                    <div class="slider">
+                    <div class="slider desctop">
                         <div class="slide">
+                            <img class="md-trigger" data-modal="modal_picture-1" src="img/hotels/1.png" alt="Комфортный отель">
+                            <img class="md-trigger" data-modal="modal_picture-2" src="img/hotels/2.png" alt="Комфортный отель">
+                            <img class="md-trigger" data-modal="modal_picture-3" src="img/hotels/3.png" alt="Комфортный отель">
+                        </div>
+                        <div class="slide">
+                            <img class="md-trigger" data-modal="modal_picture-4" src="img/hotels/4.png" alt="Комфортный отель">
+                            <img class="md-trigger" data-modal="modal_picture-5" src="img/hotels/5.png" alt="Комфортный отель">
+                            <img class="md-trigger" data-modal="modal_picture-6" src="img/hotels/6.png" alt="Комфортный отель">
+                        </div>
+                        <div class="slide">
+                            <img class="md-trigger" data-modal="modal_picture-7" src="img/hotels/7.png" alt="Комфортный отель">
+                            <img class="md-trigger" data-modal="modal_picture-8" src="img/hotels/8.png" alt="Комфортный отель">
+                            <img class="md-trigger" data-modal="modal_picture-9" src="img/hotels/9.png" alt="Комфортный отель">
+                        </div>
+                    </div>
+                    <div class="slider mobile tc">
+                        <div class="wrap">
                             <img src="img/hotels/1.png" alt="Комфортный отель">
+                        </div>
+                        <div class="wrap">
                             <img src="img/hotels/2.png" alt="Комфортный отель">
-                            <img src="img/hotels/3.png" alt="Комфортный отель">
                         </div>
-                        <div class="slide">
+                        <div class="wrap">
+                            <img  src="img/hotels/3.png" alt="Комфортный отель">
+                        </div>
+                        <div class="wrap">
                             <img src="img/hotels/4.png" alt="Комфортный отель">
-                            <img src="img/hotels/5.png" alt="Комфортный отель">
-                            <img src="img/hotels/6.png" alt="Комфортный отель">
                         </div>
-                        <div class="slide">
+                        <div class="wrap">
+                            <img  src="img/hotels/5.png" alt="Комфортный отель">
+                        </div>
+                        <div class="wrap">
+                            <img  src="img/hotels/6.png" alt="Комфортный отель">
+                        </div>
+                        <div class="wrap">
                             <img src="img/hotels/7.png" alt="Комфортный отель">
+                        </div>
+                        <div class="wrap">
                             <img src="img/hotels/8.png" alt="Комфортный отель">
-                            <img src="img/hotels/9.png" alt="Комфортный отель">
+                        </div>
+                        <div class="wrap">
+                            <img  src="img/hotels/9.png" alt="Комфортный отель">
                         </div>
                     </div>
                 </div>
@@ -699,7 +801,7 @@
                 </div>
                 <div class="col-5 col--nopadding">
                     <h2 class="section_title main_title text--blue">связь с родными</h2>
-                    <p class=".sec_15-text text">Мы понимаем, что нельзя оставаться без связи с родными и коллегами. Поэтому <span class="title_text">перед поездкой каждый участник получит номер телефона, на который можно позвонить в случае необходимости.</span> Звонки будет принимать ответственный человек, который тут же <br /> передаст вам всю информацию</p>
+                    <p class=".sec_15-text text">Мы понимаем, что нельзя оставаться без связи с родными и коллегами. Поэтому <span class="title_text">перед поездкой каждый участник получит номер телефона, на который можно позвонить в случае необходимости.</span> Звонки будет принимать ответственный человек, который тут же <br /> передаст вам всю информацию.</p>
                 </div>
             </div>
         </div>
@@ -717,7 +819,7 @@
                         <p class="item_text title_text">Мы хотим добиться того, чтоб ваши цели совпадали с истинными желаниями.</p>
                     </div>
                     <div class="item sec_16-item item">
-                        <p class="item_text text">BootCamp в Карпатах - это возможность за 5 дней узнать о себе больше, чем вы знали всю свою жизнь</p>
+                        <p class="item_text text">BootCamp в Карпатах - это возможность за 5 дней узнать о себе больше, чем вы знали всю свою жизнь.</p>
                     </div>
 
                     <p class="sec_16-cta text--upper title_text">Убедитесь, что не тратите время зря.</p>
@@ -763,7 +865,7 @@
 
 
                         <span class="field">
-                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="custom_tel" required="">
+                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="phone" required="">
                             <span class="bar"></span>
                         </span>
 
@@ -793,15 +895,15 @@
             </div>
             <div class="row footer">
                 <div class="col-2">
-                    <img src="img/logo-footer.png" alt="Соль" class="logo logo-footer">
+                    <a href="#sec_01" class="scroll"><img src="img/logo-footer.png" alt="Соль" class="logo logo-footer"></a>
                 </div>
                 <div class="col-10 col--nopadding">
                     <ul class="footer_navigation">
-                        <li class="menu_navigation_item"><a href="#sec_01" class="scroll menu_navigation_link">Что такое BootCamp</a></li>
-                        <li class="menu_navigation_item"><a href="#sec_01" class="scroll menu_navigation_link">Программа</a></li>
-                        <li class="menu_navigation_item"><a href="#sec_01" class="scroll menu_navigation_link">Локации</a></li>
-                        <li class="menu_navigation_item"><a href="#sec_01" class="scroll menu_navigation_link">Тренеры</a></li>
-                        <li class="menu_navigation_item"><a href="#sec_01" class="scroll menu_navigation_link">Как попасть</a></li>
+                        <li class="menu_navigation_item"><a href="#sec_04" class="scroll menu_navigation_link">Что такое BootCamp</a></li>
+                        <li class="menu_navigation_item"><a href="#sec_09" class="scroll menu_navigation_link">Программа</a></li>
+                        <li class="menu_navigation_item"><a href="#sec_10" class="scroll menu_navigation_link">Тренеры</a></li>
+                        <li class="menu_navigation_item"><a href="#sec_11" class="scroll menu_navigation_link">Как попасть</a></li>
+                        <li class="menu_navigation_item"><a href="#sec_12" class="scroll menu_navigation_link">Локации</a></li>
                     </ul>
                 </div>
             </div>
@@ -880,7 +982,7 @@
 
 
                         <span class="field">
-                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="custom_tel" required="">
+                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="phone" required="">
                             <span class="bar"></span>
                         <!-- Если отправляем и на Гет РЕспонс тоже - меняем название поля name на то которое создали в компании ГетРЕспонса -->
                         </span>
@@ -960,10 +1062,16 @@
 
 
                         <span class="field">
-                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="custom_tel" required="">
+                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="phone" required="">
                             <span class="bar"></span>
                         <!-- Если отправляем и на Гет РЕспонс тоже - меняем название поля name на то которое создали в компании ГетРЕспонса -->
                         </span>
+
+                        <span class="field">
+                            <input type="email" required="" placeholder="Ваш E-Mail" name="email" class="form-control">
+                            <span class="bar"></span>
+                        </span>
+
 
 
                         <button type="submit" name="send" class="btn flex callbackPopup-btn"><span class="text--upper btn_span main_title">перезвоните мне</span><img src="img/ar-1.png" alt="Указатель" class="btn_arrow"></button>
@@ -979,13 +1087,94 @@
                         <!-- GET RESPONCE INPUTS -->
                         <div class="clear"></div>
 
-
                     </form>
-
 
                 </div>
             </div>
         </div>
+
+        <div class="md-modal md-effect-8 md_large" id="modal_picture-1">
+            <div class="md-content">
+                <span class="btn_close_modal">
+                    <a class="md-close"><img src="img/close-btn.png" alt="Close"></a>
+                </span>
+                <img src="img/hotels/hotels-big/1.png" alt="Hotel">
+            </div>
+        </div>
+
+        <div class="md-modal md-effect-8 md_large" id="modal_picture-2">
+            <div class="md-content">
+                <span class="btn_close_modal">
+                    <a class="md-close"><img src="img/close-btn.png" alt="Close"></a>
+                </span>
+                <img src="img/hotels/hotels-big/2.png" alt="Hotel">
+            </div>
+        </div>
+
+        <div class="md-modal md-effect-8 md_large" id="modal_picture-3">
+            <div class="md-content">
+                <span class="btn_close_modal">
+                    <a class="md-close"><img src="img/close-btn.png" alt="Close"></a>
+                </span>
+                <img src="img/hotels/hotels-big/3.png" alt="Hotel">
+            </div>
+        </div>
+
+        <div class="md-modal md-effect-8 md_large" id="modal_picture-4">
+            <div class="md-content">
+                <span class="btn_close_modal">
+                    <a class="md-close"><img src="img/close-btn.png" alt="Close"></a>
+                </span>
+                <img src="img/hotels/hotels-big/4.png" alt="Hotel">
+            </div>
+        </div>
+
+        <div class="md-modal md-effect-8 md_large" id="modal_picture-5">
+            <div class="md-content">
+                <span class="btn_close_modal">
+                    <a class="md-close"><img src="img/close-btn.png" alt="Close"></a>
+                </span>
+                <img src="img/hotels/hotels-big/5.png" alt="Hotel">
+            </div>
+        </div>
+
+        <div class="md-modal md-effect-8 md_large" id="modal_picture-6">
+            <div class="md-content">
+                <span class="btn_close_modal">
+                    <a class="md-close"><img src="img/close-btn.png" alt="Close"></a>
+                </span>
+                <img src="img/hotels/hotels-big/6.png" alt="Hotel">
+            </div>
+        </div>
+
+        <div class="md-modal md-effect-8 md_large" id="modal_picture-7">
+            <div class="md-content">
+                <span class="btn_close_modal">
+                    <a class="md-close"><img src="img/close-btn.png" alt="Close"></a>
+                </span>
+                <img src="img/hotels/hotels-big/7.png" alt="Hotel">
+            </div>
+        </div>
+
+        <div class="md-modal md-effect-8 md_large" id="modal_picture-8">
+            <div class="md-content">
+                <span class="btn_close_modal">
+                    <a class="md-close"><img src="img/close-btn.png" alt="Close"></a>
+                </span>
+                <img src="img/hotels/hotels-big/8.png" alt="Hotel">
+            </div>
+        </div>
+
+        <div class="md-modal md-effect-8 md_large" id="modal_picture-9">
+            <div class="md-content">
+                <span class="btn_close_modal">
+                    <a class="md-close"><img src="img/close-btn.png" alt="Close"></a>
+                </span>
+                <img src="img/hotels/hotels-big/9.png" alt="Hotel">
+            </div>
+        </div>
+
+
 
 
         <div class="md-modal md-effect-8 md_large" id="modal_politics_one">

@@ -177,6 +177,15 @@ button:hover, a:hover {
   transition: transform 0.3s, color .3s;
   transition: transform 0.3s, color .3s, -webkit-transform 0.3s; }
 
+.tel {
+  display: block;
+  color: #000;
+  font-size: 1.5rem;
+  margin-top: 10px; }
+
+.tel:hover {
+  color: #2196f3; }
+
 .menu_navigation_item {
   position: relative; }
 
@@ -263,3 +272,32 @@ button:hover, a:hover {
     margin: 60px 0 75px; }
   .sec_01_wrapper .btn {
     max-width: 390px; }
+
+.menu_site_navigation {
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 85px;
+  left: 0;
+  width: 130px;
+  padding: 20px;
+  opacity: 0.5;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.menu_site_navigation:hover {
+  opacity: 1; }
+
+.menu_site_navigation.open {
+  background-color: #fff;
+  z-index: 10;
+  position: fixed;
+  width: 350px;
+  padding: 45px 45px 60px 65px;
+  height: 100vh;
+  opacity: 1; }

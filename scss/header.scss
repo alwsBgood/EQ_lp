@@ -135,7 +135,6 @@ button, a{
 }
 
 
-
 .main_title{
   font-family: $main_bold_font;
 }
@@ -204,7 +203,18 @@ button, a{
   font-size: 1.125rem;
   line-height: 2.25rem;
   transition: transform 0.3s, color .3s;
-} 
+}
+
+.tel{
+  display: block;
+  color: #000;
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.tel:hover{
+  color: $main_color;
+}
 
 .menu_navigation_item{
   position: relative;
@@ -309,3 +319,33 @@ button, a{
   }
 }
 
+.menu_site_navigation{
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 85px;
+  left: 0;
+  width: 130px;
+  padding: 20px;
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.menu_site_navigation:hover{
+  opacity: 1;
+}
+
+.menu_site_navigation.open{
+  background-color: #fff;
+  z-index: 10;
+  position: fixed;
+  width: 350px;
+  padding: 45px 45px 60px 65px;
+  height: 100vh;
+  opacity: 1;
+}
