@@ -122,7 +122,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="col-8">
                     <div class="content_wrapper sec_01_wrapper">
-                        <p class="vertical_text rotate--minus main_title">8-12 февраля 2017</p>
+                        <p class="vertical_text rotate--minus main_title">29 марта - 2 апреля 2017</p>
                         <h1 class="main_title">bootcamp</h1>
                         <p class="afterheader">for<span class="title_text"> leaders</span></p>
                         <p class="sec_01_describe title_text text--upper">За пять дней вы поймете о себе <br /> больше, чем знали всю жизнь </p>
