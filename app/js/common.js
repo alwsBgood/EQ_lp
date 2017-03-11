@@ -61,6 +61,26 @@ $(function() {
     $(send_btn).each(function() {
       $(this).attr('disabled', true);
     });
+
+    // Send data from form to zohoCRM
+
+    var form_data = $(this).closest('form').serializeArray();
+    var form_data_bootcamp = {};
+
+    $.each(form_data, function(i, v) {
+        form_data_bootcamp[v.name] = v.value;
+    });
+
+    console.log(form_data_bootcamp);
+    $.ajax({
+       type: 'POST',
+        url: '/registration/application.php',
+        data: {bootcamp: form_data_bootcamp, utm_source: form_data_bootcamp['utm_source'], google_id: form_data_bootcamp['google_id'], utm_campaign: form_data_bootcamp['utm_campaign'], utm_content: form_data_bootcamp['utm_content'], utm_medium: form_data_bootcamp['utm_medium'], utm_term: form_data_bootcamp['utm_term']},
+        success: function() {
+            console.log("Zoho ok");
+        }
+    });
+
     // Отправка на почту
     $.ajax({
       type: 'POST',
@@ -86,7 +106,7 @@ $(function() {
              console.log(form.serialize());
              if (response.status == 'success') {
               $('form').trigger("reset");
-               window.location.href = 'http://allinsol.com/eqbootcamp/success/';
+               // window.location.href = 'http://allinsol.com/eqbootcamp/success/';
             }
           }
         });

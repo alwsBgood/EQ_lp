@@ -36,9 +36,6 @@ fwrite($file, ' ------#  ');
 fclose($file);
 
 
-
-
-
 function getVar($name)
 {
   $name = isset($_POST[$name]) ? trim($_POST[$name]) : null;
@@ -153,7 +150,7 @@ if (empty($data['confirmation_phone'])) {
                       `utmcmd`,
                       `affiliate_id`,
                       `click_id`
-                      ) 
+                      )
             VALUES('".$fullName[0]."',
                     '".(empty($fullName[1]) ? '-' : $fullName[1])."',
                     '".$data['email']."',
