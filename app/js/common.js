@@ -213,6 +213,18 @@ $(document).ready(function() {
   });
 });
 
+$(document).ready(function() {
+  $('.photo_slider').slick({
+    slidesToShow: 1,
+    dots: false,
+    arrows: true,
+    fade: true,
+    slidesToScroll: 1,
+    autoplay: false,
+    adaptiveHeight: false
+  });
+});
+
 // Menu
 
 $('.menu_site_navigation').click(function(event) {
