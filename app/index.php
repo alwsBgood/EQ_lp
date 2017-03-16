@@ -2,6 +2,7 @@
     require 'db/data.php';
     require 'db/visits.php';
 ?>
+
 <!DOCTYPE html>
 <html class="no-js" lang="ru">
 <script>
@@ -609,7 +610,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2 class=" mobile section_title main_title text--blue">Так проходил первый <br /> EQ BootCamp for leaders </h2>
                     <div class="photo_slider">
                         <a href="img/photo/6.jpg" data-lightbox="gallery-set">
-                            <img src="img/photo/slider/6.png" alt=""></a>
+                        <img src="img/photo/slider/6.png" alt=""></a>
                         <a href="img/photo/1.jpg" data-lightbox="gallery-set">
                             <img src="img/photo/slider/1.png" alt=""></a>
                         <a href="img/photo/2.jpg" data-lightbox="gallery-set">
@@ -620,8 +621,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <img src="img/photo/slider/4.png" alt=""></a>
                         <a href="img/photo/5.jpg" data-lightbox="gallery-set">
                             <img src="img/photo/slider/5.png" alt=""></a>
-                        <a href="img/photo/6.jpg" data-lightbox="gallery-set">
-                            <img src="img/photo/slider/6.png" alt=""></a>
                         <a href="img/photo/7.jpg" data-lightbox="gallery-set">
                             <img src="img/photo/slider/7.png" alt=""></a>
                         <a href="img/photo/8.jpg" data-lightbox="gallery-set">
@@ -899,18 +898,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <!-- END Hidden Required Fields -->
 
                         <span class="field">
-                            <input type="text" class="form-control" name="name" required=""  placeholder="Ваше имя " />
+                            <input type="text" class="form-control" name="entry.1005876579" required=""  placeholder="Ваше имя " />
                             <span class="bar"></span>
                         </span>
 
 
                         <span class="field">
-                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="phone" required="">
+                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="entry.1707644685" required="">
                             <span class="bar"></span>
                         </span>
 
                         <span class="field">
-                            <input type="email" required="" placeholder="Ваш E-Mail" name="email" class="form-control">
+                            <input type="email" required="" placeholder="Ваш E-Mail" name="entry.980115966" class="form-control">
                             <span class="bar"></span>
                         </span>
 
@@ -1016,13 +1015,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <!-- END Hidden Required Fields -->
 
                         <span class="field">
-                            <input type="text" class="form-control" name="name" required=""  placeholder="Ваше имя " />
+                            <input type="text" class="form-control" name="entry.1005876579" required=""  placeholder="Ваше имя " />
                             <span class="bar"></span>
                         </span>
 
 
                         <span class="field">
-                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="phone" required="">
+                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="entry.1707644685" required="">
                             <span class="bar"></span>
                         <!-- Если отправляем и на Гет РЕспонс тоже - меняем название поля name на то которое создали в компании ГетРЕспонса -->
                         </span>
@@ -1096,19 +1095,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <!-- END Hidden Required Fields -->
 
                         <span class="field">
-                            <input type="text" class="form-control" name="name" required=""  placeholder="Ваше имя " />
+                            <input type="text" class="form-control" name="entry.1005876579" required=""  placeholder="Ваше имя " />
                             <span class="bar"></span>
                         </span>
 
 
                         <span class="field">
-                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="phone" required="">
+                            <input placeholder="Ваш телефон" type="tel" class="form-control" name="entry.1707644685" required="">
                             <span class="bar"></span>
                         <!-- Если отправляем и на Гет РЕспонс тоже - меняем название поля name на то которое создали в компании ГетРЕспонса -->
                         </span>
 
                         <span class="field">
-                            <input type="email" required="" placeholder="Ваш E-Mail" name="email" class="form-control">
+                            <input type="email" required="" placeholder="Ваш E-Mail" name="entry.980115966" class="form-control">
                             <span class="bar"></span>
                         </span>
 
