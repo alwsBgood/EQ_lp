@@ -106,7 +106,7 @@ $(function() {
              console.log(form.serialize());
              if (response.status == 'success') {
               $('form').trigger("reset");
-               // window.location.href = 'http://allinsol.com/eqbootcamp/success/';
+               window.location.href = 'http://allinsol.com/eqbootcamp/success/';
             }
           }
         });
