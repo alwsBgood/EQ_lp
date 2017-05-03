@@ -220,8 +220,9 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $('.photo_slider').slick({
+  $('.photo_slider-1').slick({
     slidesToShow: 1,
+    lazyLoad: 'ondemand',
     dots: false,
     arrows: true,
     fade: true,
@@ -229,6 +230,25 @@ $(document).ready(function() {
     autoplay: false,
     adaptiveHeight: false
   });
+});
+
+$(document).ready(function() {
+  $('.photo_slider-2').slick({
+    slidesToShow: 1,
+    lazyLoad: 'ondemand',
+    dots: false,
+    arrows: true,
+    fade: true,
+    slidesToScroll: 1,
+    autoplay: false,
+    adaptiveHeight: false
+  });
+});
+
+//Tabs
+
+$('.tabs').tabslet({
+  animation: true
 });
 
 // Menu

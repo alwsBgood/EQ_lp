@@ -384,6 +384,7 @@
   .item+.item{margin-top:40px;}
 }
 
+// Section 14-1
 
 #sec_14-1{
   padding: 70px 0 100px;
@@ -405,6 +406,21 @@
   }
   .mobile{
     display: none;
+  }
+  .tabs{
+    .btn{
+      width: 200px;
+      height: 50px;
+    }
+  }
+  .tab_control{
+    margin-bottom: 30px;
+    max-width: 552px;
+    li{
+      max-width: 200px;
+    }
+    li:first-child{float: left;}
+    li:nth-child(2){float: right;}
   }
 }
 

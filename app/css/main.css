@@ -343,6 +343,18 @@
     right: initial; }
   #sec_14-1 .mobile {
     display: none; }
+  #sec_14-1 .tabs .btn {
+    width: 200px;
+    height: 50px; }
+  #sec_14-1 .tab_control {
+    margin-bottom: 30px;
+    max-width: 552px; }
+    #sec_14-1 .tab_control li {
+      max-width: 200px; }
+    #sec_14-1 .tab_control li:first-child {
+      float: left; }
+    #sec_14-1 .tab_control li:nth-child(2) {
+      float: right; }
 
 #sec_15 {
   padding-top: 175px;
@@ -761,9 +773,11 @@ input:-ms-input-placeholder {
     background-position: top 390px right -200px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-  #sec_14-1 .photo_slider {
+  #sec_14-1 .photo_slider-1,
+  #sec_14-1 .photo_slider-2 {
     margin: 0 auto; }
-    #sec_14-1 .photo_slider img {
+    #sec_14-1 .photo_slider-1 img,
+    #sec_14-1 .photo_slider-2 img {
       width: 100%;
       max-width: 551px; }
   #sec_14-1 .slick-next {
@@ -833,15 +847,19 @@ input:-ms-input-placeholder {
 @media (min-width: 768px) and (max-width: 991px) {
   #sec_14-1 .desctop {
     display: block; }
-  #sec_14-1 .photo_slider {
+  #sec_14-1 .photo_slider-1,
+  #sec_14-1 .photo_slider-2 {
     margin: 40px auto 0; }
-    #sec_14-1 .photo_slider img {
+    #sec_14-1 .photo_slider-1 img,
+    #sec_14-1 .photo_slider-2 img {
       width: 100%;
       max-width: 551px; }
   #sec_14-1 .slick-next {
     right: 40px; }
   #sec_14-1 .slick-prev {
     left: 40px; }
+  #sec_14-1 .tab_control {
+    max-width: 100%; }
   html {
     font-size: 13px; }
   body {
@@ -973,9 +991,11 @@ input:-ms-input-placeholder {
     max-height: 320px; } }
 
 @media (max-width: 767px) {
-  #sec_14-1 .photo_slider {
+  #sec_14-1 .photo_slider-1,
+  #sec_14-1 .photo_slider-2 {
     margin: 40px auto 50px; }
-    #sec_14-1 .photo_slider img {
+    #sec_14-1 .photo_slider-1 img,
+    #sec_14-1 .photo_slider-2 img {
       width: 100%;
       max-width: 551px;
       margin: 0 auto; }
@@ -987,6 +1007,8 @@ input:-ms-input-placeholder {
     display: block; }
   #sec_14-1 .desctop {
     display: none; }
+  #sec_14-1 .tab_control {
+    max-width: 100%; }
   .btn {
     height: 4.3rem; }
   div[id*="modal_picture"] {
@@ -1251,6 +1273,12 @@ input:-ms-input-placeholder {
     padding-top: 0; }
   .slick-next, .slick-prev {
     top: 0; } }
+
+@media (max-width: 430px) {
+  #sec_14-1 .tab_control li {
+    display: block;
+    float: none !important;
+    margin: 0 auto; } }
 
 @media (max-width: 404px) {
   .sec_03_items {

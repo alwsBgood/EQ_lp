@@ -139,7 +139,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container">
             <div class="row">
                 <div class="col-7 only_img_col">
-                    <img src="img/sec_02-img-1.png" alt="" class="sec_img">
+                    <img src="img/sec_02-img-2.png" alt="" class="sec_img">
                 </div>
                 <div class="col-5 col--nopadding">
                     <h2 class="main_title section_title text--blue">Вы лидер</h2>
@@ -607,35 +607,92 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="container">
             <div class="row sec_14-row_1">
                 <div class="col-7 only_img_col">
-                <h2 class=" mobile section_title main_title text--blue">Так проходил первый <br /> EQ BootCamp for leaders </h2>
-                    <div class="photo_slider">
-                        <a href="img/photo/6.jpg" data-lightbox="gallery-set">
-                        <img src="img/photo/slider/6.png" alt=""></a>
-                        <a href="img/photo/1.jpg" data-lightbox="gallery-set">
-                            <img src="img/photo/slider/1.png" alt=""></a>
-                        <a href="img/photo/2.jpg" data-lightbox="gallery-set">
-                            <img src="img/photo/slider/2.png" alt=""></a>
-                        <a href="img/photo/3.jpg" data-lightbox="gallery-set">
-                            <img src="img/photo/slider/3.png" alt=""></a>
-                        <a href="img/photo/4.jpg" data-lightbox="gallery-set">
-                            <img src="img/photo/slider/4.png" alt=""></a>
-                        <a href="img/photo/5.jpg" data-lightbox="gallery-set">
-                            <img src="img/photo/slider/5.png" alt=""></a>
-                        <a href="img/photo/7.jpg" data-lightbox="gallery-set">
-                            <img src="img/photo/slider/7.png" alt=""></a>
-                        <a href="img/photo/8.jpg" data-lightbox="gallery-set">
-                            <img src="img/photo/slider/8.png" alt=""></a>
-                        <a href="img/photo/9.jpg" data-lightbox="gallery-set">
-                            <img src="img/photo/slider/9.png" alt=""></a>
+                <h2 class=" mobile section_title main_title text--blue">Наши результаты</h2>
+
+
+                    <div class='tabs tabs_default'>
+                      <ul class='tab_control'>
+                        <li><a href="#tab-1" class="btn flex"><span class="text--upper btn_span main_title">BootCamp 1</span><img src="img/ar-1.png" alt="Указатель" class="btn_arrow"></a></li>
+                        <li><a href="#tab-2" class="btn flex"><span class="text--upper btn_span main_title">BootCamp 2</span><img src="img/ar-1.png" alt="Указатель" class="btn_arrow"></a></li>
+                        <div class="clear"></div>
+                      </ul>
+                      <div id='tab-1'>
+                          <div class="photo_slider-1">
+                              <a href="img/photo_s1/6.jpg" data-lightbox="gallery-set">
+                              <img src="img/photo_s1/slider/6.png" alt=""></a>
+                              <a href="img/photo_s1/1.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s1/slider/1.png" alt=""></a>
+                              <a href="img/photo_s1/2.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s1/slider/2.png" alt=""></a>
+                              <a href="img/photo_s1/3.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s1/slider/3.png" alt=""></a>
+                              <a href="img/photo_s1/4.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s1/slider/4.png" alt=""></a>
+                              <a href="img/photo_s1/5.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s1/slider/5.png" alt=""></a>
+                              <a href="img/photo_s1/7.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s1/slider/7.png" alt=""></a>
+                              <a href="img/photo_s1/8.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s1/slider/8.png" alt=""></a>
+                              <a href="img/photo_s1/9.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s1/slider/9.png" alt=""></a>
+                          </div>
+                      </div>
+                      <div id='tab-2'>
+                          <div class="photo_slider-2">
+                              <a href="img/photo_s2/1.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s2/slider/1.png" alt="">
+                              </a>
+                              <a href="img/photo_s2/2.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s2/slider/2.png" alt="">
+                              </a>
+                              <a href="img/photo_s2/3.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s2/slider/3.png" alt="">
+                              </a>
+                              <a href="img/photo_s2/4.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s2/slider/4.png" alt="">
+                              </a>
+                              <a href="img/photo_s2/5.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s2/slider/5.png" alt="">
+                              </a>
+                              <a href="img/photo_s2/6.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s2/slider/6.png" alt="">
+                              </a>
+                              <a href="img/photo_s2/7.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s2/slider/7.png" alt="">
+                              </a>
+                              <a href="img/photo_s2/8.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s2/slider/8.png" alt="">
+                              </a>
+                              <a href="img/photo_s2/9.jpg" data-lightbox="gallery-set">
+                                  <img src="img/photo_s2/slider/9.png" alt="">
+                              </a>
+                              <a href="img/photo_s2/10.jpg" data-lightbox="gallery-set">
+                                <img src="img/photo_s2/slider/10.png" alt="">
+                            </a>
+                            <a href="img/photo_s2/11.jpg" data-lightbox="gallery-set">
+                                <img src="img/photo_s2/slider/11.png" alt="">
+                            </a>
+                            <a href="img/photo_s2/12.jpg" data-lightbox="gallery-set">
+                                <img src="img/photo_s2/slider/12.png" alt="">
+                            </a>
+                            <a href="img/photo_s2/13.jpg" data-lightbox="gallery-set">
+                                <img src="img/photo_s2/slider/13.png" alt="">
+                            </a>
+                        </div>
+                      </div>
+
                     </div>
+
                 </div>
                 <div class="col-5 col--nopadding">
-                    <h2 class="desctop section_title main_title text--blue">Так проходил первый EQ BootCamp for leaders </h2>
+                    <h2 class="desctop section_title main_title text--blue">Наши результаты</h2>
                     <div class="item sec_14-item">
-                        <p class="item_text title_text">Как это было впервые.</p>
+                        <p class="item_text title_text">2 буткемпа, 25 участников, регулярные встречи выпускников и личный коучинг в рамках 6 месяцев постподдержки.</p>
                     </div>
                     <div class="item sec_14-item">
-                        <p class="item_text text"> Камерная атмосфера позволила отказаться от навязанных идей, побыть в тишине с самим собой, прожить свои ценности. <br /><br /> Индивидуальный подход помог пересмотреть жизненные приоритеты и навести резкость. <br /><br />Йога и медитативные прогулки научили замедляться, прислушиваться к своему телу и разуму. <br /><br /> Это то, чего так не хватает в шуме города и собственных мыслей.</p>
+                        <!-- <p class="item_text text"></p> -->
+                        <p class="item_text text">NPS - 68%  <br> Полезность участия в буткемпе - 9.43 из 10 <br> Качество организации - 8.62 из 10 <br> Локация буткемпа - 9.31 из 10 <br> Атмосфера - 9.50 из 10</p>
                     </div>
                 </div>
             </div>

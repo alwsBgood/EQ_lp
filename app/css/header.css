@@ -99,6 +99,7 @@ button:hover, a:hover {
   background-color: #2196f3;
   opacity: 0.9;
   overflow: hidden;
+  padding-top: 0.313rem;
   width: 100%;
   max-width: 400px;
   color: #fff;
@@ -110,6 +111,15 @@ button:hover, a:hover {
   .btn span {
     display: inline-block;
     margin-right: 40px; }
+  .btn img {
+    margin-top: -4px; }
+
+button.btn span {
+  margin-top: 4px; }
+
+button.btn img {
+  vertical-align: middle;
+  margin-top: 0; }
 
 .btn:hover {
   opacity: 1; }

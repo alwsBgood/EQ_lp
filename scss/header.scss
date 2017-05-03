@@ -112,6 +112,7 @@ button, a{
   background-color: $main_color;
   opacity: 0.9;
   overflow: hidden;
+  padding-top: 0.313rem;
 
   width: 100%;
   max-width: 400px;
@@ -125,6 +126,15 @@ button, a{
     display: inline-block;
     margin-right: 40px;
   }
+  img{margin-top: -4px;}
+}
+
+button.btn {
+  span{margin-top: 4px}
+  img{
+      vertical-align: middle;
+      margin-top: 0;
+    }
 }
 
 .btn:hover{
