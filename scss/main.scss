@@ -396,9 +396,16 @@
     margin-top: -70px;
     margin-left: 30px;
   }
-  .item+.item{margin-top:40px;}
+  .item+.item{
+    margin-top:40px;
+    line-height: 24px;
+    br{display:block;}
+  }
   .slick-next{
     right: 220px;
+  }
+  .item{
+
   }
   .slick-prev{
     left: 120px;

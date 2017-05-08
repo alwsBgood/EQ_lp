@@ -335,7 +335,10 @@
     margin-top: -70px;
     margin-left: 30px; }
   #sec_14-1 .item + .item {
-    margin-top: 40px; }
+    margin-top: 40px;
+    line-height: 24px; }
+    #sec_14-1 .item + .item br {
+      display: block; }
   #sec_14-1 .slick-next {
     right: 220px; }
   #sec_14-1 .slick-prev {
